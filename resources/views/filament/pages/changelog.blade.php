@@ -69,7 +69,7 @@
                     <a href="https://www.roblox.com/share?code=2eb9bd57a1eb3b4d81abe24fbf623a12&type=Profile&source=ProfileShare&stamp=1751206603220" target="_blank" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
                 </div>
                 <span class="text-sm mt-5 ">Current Version</span>
-                <span class="text-sm font-bold ">2.1</span>
+                <span class="text-sm font-bold ">2.2</span>
             </div>    
         </div>
     </div>
@@ -80,12 +80,32 @@
 <div class="flex flex-row max-w-1 items-center">
     <ol class="relative border-s border-gray-200 dark:border-gray-700"> 
         
+
+    <li class="mb-10 ms-6">            
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white "></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">1 July 2025</time>
+        <!-- Card -->
+        <div class="block max-w-sm p-6 border-gray-200 rounded-lg shadow-sm" style="background: linear-gradient(137deg,rgba(255, 255, 255, 0) 80%, rgba(22, 151, 250, 0.7) 100%);">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight">V2.2 - Current</h5> 
+            <ul class="max-w-md space-y-1 list-disc list-inside ">
+                <li>Penambahan redirect to index after create Daily Task </li>
+                <li>Penambahan redirect to index after create Task User </li>
+                <li>Penambahan redirect to index after create User (Administrator) </li>
+                <li>Penambahan redirect to index after create List Office (Administrator) </li>
+                <li>Penambahan redirect to index after create User Role (Administrator) </li>
+                <li>Fix bug foto profile tidak muncul </li>
+                </ul>
+        </div>
+    <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+    <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+    </li>
+
         <li class="mb-10 ms-6">            
         <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white "></div>
         <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">30 June 2025</time>
         <!-- Card -->
         <div class="block max-w-sm p-6 border-gray-200 rounded-lg shadow-sm" style="background: linear-gradient(137deg,rgba(255, 255, 255, 0) 80%, rgba(22, 151, 250, 0.7) 100%);">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight">V2.1 - Current</h5> 
+        <h5 class="mb-2 text-2xl font-bold tracking-tight">V2.1</h5> 
             <ul class="max-w-md space-y-1 list-disc list-inside ">
                 <li>Perubahan option Office pada dailytask menjadi dinamis</li>
                 <li>Perubahan input pada List user otomatis menarik user id</li>
