@@ -16,4 +16,13 @@ class EditUser extends EditRecord
             Actions\DeleteAction::make(),
         ];
     }
+
+        protected function getRedirectUrl(): string
+    {
+        // Redirect ke halaman list transaksi setelah berhasil create
+        return UserResource::getUrl('index');
+
+        // Atau jika kamu ingin redirect ke route lain:
+        // return route('posts.list');
+    }
 }

@@ -33,7 +33,7 @@ class DailyTaskExporter extends Exporter
             ExportColumn::make('tanggal')
             ->label('Tanggal')
                 ->formatStateUsing(function ($state) {
-                    return \Carbon\Carbon::parse($state)->format('d-M-Y');
+                    return \Carbon\Carbon::parse($state)->format('d-M-y');
                 }),
             ExportColumn::make('category'),
             ExportColumn::make('activities'),

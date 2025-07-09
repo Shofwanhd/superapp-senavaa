@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Dailytask extends Model
 {
@@ -16,4 +17,8 @@ class Dailytask extends Model
         public function listclient() : BelongsTo {
         return $this->belongsTo(Taskuser::class);
     }
+
+        public function activitylog() : HasOne {
+            return $this->hasOne(ActivityLog::class);
+        }
 }
