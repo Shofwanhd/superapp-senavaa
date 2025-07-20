@@ -10,6 +10,9 @@ use Illuminate\Support\ServiceProvider;
 use Filament\View\PanelsRenderHook;
 use Illuminate\Contracts\View\View;
 
+use Illuminate\Contracts\Auth\Authenticatable;
+use App\Models\User;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -17,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->bind(Authenticatable::class, User::class);
     }
 
     /**

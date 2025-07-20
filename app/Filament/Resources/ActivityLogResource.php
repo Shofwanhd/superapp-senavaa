@@ -28,6 +28,7 @@ use App\Filament\Resources\ActivityLogResource\Pages\EditActivityLog;
 use App\Filament\Resources\ActivityLogResource\Pages\ListActivityLogs;
 use App\Filament\Resources\ActivityLogResource\Pages\CreateActivityLog;
 //use Filament\Actions\Exports\ExportBulkAction;
+use Filament\Tables\Filters\Filter;
 
 class ActivityLogResource extends Resource
 {
@@ -46,6 +47,13 @@ class ActivityLogResource extends Resource
     public static function getNavigationGroup(): string
     {
         return 'Aplikasi > Activity Log';
+    }
+
+    // untuk menampilkan data per user
+        public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()
+            ->where('user_id', Auth::id());
     }
 
     public static function form(Form $form): Form
@@ -98,7 +106,10 @@ class ActivityLogResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                Filter::make('Tampilkan yang sudah diexport')->toggle()
+                        ->query(fn (Builder $query): Builder => $query->where('isExported', true)),
+                Filter::make('Tampilkan yang belum diexport')->toggle()
+                        ->query(fn (Builder $query): Builder => $query->where('isExported', false))->default()
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
